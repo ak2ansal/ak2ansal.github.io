@@ -33,6 +33,11 @@
   --raisin-black_a6: hsla(216, 14%, 14%, 0.06);
   --gunmetal: hsla(214, 15%, 21%, 1);
   --charcoal: hsla(219, 22%, 26%, 1);
+  --background-dark: #121212; /* Dark background */
+  --text-light: #E0E0E0; /* Light grey text */
+  --accent-color: #BB86FC; /* Accent color for links and buttons */
+  --secondary-text: #9E9E9E; /* Secondary text color */
+  --divider-color: #373737;
 
   /**
    * typography
@@ -84,6 +89,37 @@
 }
 
 
+body {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+a, .btn, .navbar-link, .footer .social-link {
+  color: var(--accent-color);
+}
+
+/* Adjust hover effects for interactive elements */
+a:hover, .btn:hover, .navbar-link:hover, .footer .social-link:hover {
+  color: var(--text-light);
+}
+
+.header {
+  background-color: var(--background-dark);
+  /* ... other properties ... */
+}
+
+/* ... other header styles ... */
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero {
+  background-color: var(--background-dark);
+  /* ... other properties ... */
+}
 
 
 
